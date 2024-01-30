@@ -16,6 +16,9 @@ hooks:
       timeout: 300
       runas: ubuntu
   AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: ubuntu
     - location: scripts/run_migrations.sh
       timeout: 300
       runas: ubuntu
