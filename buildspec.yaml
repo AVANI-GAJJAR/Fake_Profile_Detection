@@ -17,6 +17,7 @@ phases:
     commands:
       - echo Prebuild ops
       - pip install --upgrade pip
+      - pip install --user --upgrade virtualenv
       - pip install -r requirements.txt
   build:
     commands:
